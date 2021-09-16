@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    string message = "";
+    if (ViewData["message"] != null)
+    {
+        message = ViewData["message"].ToString();
+    }
+}
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <p>@message</p>
+}
+
+<div id="create-new-user-outer-container">
+    <div id="create-new-user-inner-container">
+        <form action="CreateNewUser" method="post">
+            <div class="form-group">
+                <label for="Device ID">Device ID</label>
+                <input type="text" class="form-control" id="deviceid-input" name="DeviceId">
+            </div>
+            <div class="form-group">
+                <label for="Password1">Password</label>
+                <input type="password" class="form-control" id="password1-input" name="Password1">
+            </div>
+            <div class="form-group">
+                <label for="Password2">Confirm password</label>
+                <input type="password" class="form-control" id="password2-input" name="Password2">
+            </div>
+            <button type="submit" class="btn btn-dark">Create</button>
+            <a id="login-link" href="Login" class="button">Login</a>
+        </form>
+    </div>
+</div>
+

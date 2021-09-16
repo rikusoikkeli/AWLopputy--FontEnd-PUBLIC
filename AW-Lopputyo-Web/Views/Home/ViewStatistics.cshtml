@@ -1,0 +1,90 @@
+﻿@{
+}
+
+<script src="~/js/canvasjs.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script>
+    var allData = @Html.Raw(ViewBag.History);
+    var data7days = @Html.Raw(ViewBag.Data7Days);
+    var data1day = @Html.Raw(ViewBag.Data1Day);
+    var happiestDomains = @Html.Raw(ViewBag.HappiestDomains);
+    var saddestDomains = @Html.Raw(ViewBag.SaddestDomains);
+    var happiestHours = @Html.Raw(ViewBag.HappiestHours);
+    var saddestHours = @Html.Raw(ViewBag.SaddestHours);
+    var happiestDays = @Html.Raw(ViewBag.HappiestDays);
+</script>
+<script src="~/js/ViewStatistics.js"></script>
+<script src="~/js/GraphView.js"></script>
+
+
+<div id="main-view">
+    <div id="view-buttons">
+        <div data-view="view-1" class="view-button" id="view-button-1" onclick="ViewGraph('view-1-graph', 'bar', allData, 'History')">
+            <div class="view-button-text">HISTORY</div>
+        </div>
+        <div data-view="view-2" class="view-button" id="view-button-2" onclick="ViewGraph('view-2-graph', 'bar', data7days, 'Week History')">
+            <div class="view-button-text">WEEK<br />HISTORY</div>
+        </div>
+        <div data-view="view-3" class="view-button" id="view-button-3" onclick="ViewGraph('view-3-graph', 'bar', data1day, '24h History')">
+            <div class="view-button-text">24H<br />HISTORY</div>
+        </div>
+        <div data-view="view-4" class="view-button" id="view-button-4" onclick="ViewGraph('view-4-graph', 'bar', happiestDomains, 'Happy Domain')">
+            <div class="view-button-text">HAPPY<br />DOMAIN</div>
+        </div>
+        <div data-view="view-5" class="view-button" id="view-button-5" onclick="ViewGraph('view-5-graph', 'bar', saddestDomains, 'Sad Domain')">
+            <div class="view-button-text">SAD<br />DOMAIN</div>
+        </div>
+        <div data-view="view-6" class="view-button" id="view-button-6" onclick="ViewGraph('view-6-graph', 'bar', happiestHours, 'Happy Hour')">
+            <div class="view-button-text">HAPPY<br />HOUR</div>
+        </div>
+        <div data-view="view-7" class="view-button" id="view-button-7" onclick="ViewGraph('view-7-graph', 'bar', saddestHours, 'Sad Hour')">
+            <div class="view-button-text">SAD<br />HOUR</div>
+        </div>
+        <div data-view="view-8" class="view-button" id="view-button-8" onclick="ViewGraph('view-8-graph', 'bar', happiestDays, 'Happy Day')">
+            <div class="view-button-text">HAPPY<br />DAY</div>
+        </div>
+        <a asp-controller="Home" asp-action="Logout" style="text-decoration: none; cursor: default;">
+            <div class="view-button-logout" id="view-button-9">
+                <div id="logout-text" class="view-button-text">LOGOUT</div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div id="view-1" class="view">
+    <div id="view-1-graph" class="graph-div"></div>
+    <div class="tomenu-button"><div class="view-button-text">BACK</div></div>
+</div>
+<div id="view-2" class="view">
+    <div id="view-2-graph" class="graph-div"></div>
+    <div class="tomenu-button"><div class="view-button-text">BACK</div></div>
+</div>
+<div id="view-3" class="view">
+    <div id="view-3-graph" class="graph-div"></div>
+    <div class="tomenu-button"><div class="view-button-text">BACK</div></div>
+</div>
+<div id="view-4" class="view">
+    <div id="view-4-graph" class="graph-div"></div>
+    <div class="tomenu-button"><div class="view-button-text">BACK</div></div>
+</div>
+<div id="view-5" class="view">
+    <div id="view-5-graph" class="graph-div"></div>
+    <div class="tomenu-button"><div class="view-button-text">BACK</div></div>
+</div>
+<div id="view-6" class="view">
+    <div id="view-6-graph" class="graph-div"></div>
+    <div class="tomenu-button"><div class="view-button-text">BACK</div></div>
+</div>
+<div id="view-7" class="view">
+    <div id="view-7-graph" class="graph-div"></div>
+    <div class="tomenu-button"><div class="view-button-text">BACK</div></div>
+</div>
+<div id="view-8" class="view">
+    <div id="view-8-graph" class="graph-div"></div>
+    <div class="tomenu-button"><div class="view-button-text">BACK</div></div>
+</div>
+<div id="view-9" class="view">
+    <div id="view-9-graph" class="graph-div"></div>
+    <div class="tomenu-button"><div class="view-button-text">BACK</div></div>
+</div>
+

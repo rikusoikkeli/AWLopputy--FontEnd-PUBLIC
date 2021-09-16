@@ -1,0 +1,62 @@
+﻿<script src="~/js/Login.js"></script>
+
+@{
+    string message = "";
+    if (ViewData["message"] != null)
+    {
+        message = ViewData["message"].ToString();
+    }
+}
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <p>@message</p>
+}
+
+<div id="welcome-animation">
+    <div id="word-container-1">
+        <div id="letter-boxes">
+            <div class="letter-box" id="letter-box-1"><div>U</div></div>
+            <div class="letter-box" id="letter-box-2"><div>S</div></div>
+            <div class="letter-box" id="letter-box-3"><div>E</div></div>
+        </div>
+    </div>
+
+    <div id="word-container-2">
+        <div id="letter-boxes">
+            <div class="letter-box" id="letter-box-4"><div>T</div></div>
+            <div class="letter-box" id="letter-box-5"><div>I</div></div>
+            <div class="letter-box" id="letter-box-6"><div>M</div></div>
+            <div class="letter-box" id="letter-box-7"><div>E</div></div>
+        </div>
+    </div>
+
+    <div id="word-container-3">
+        <div id="letter-boxes">
+            <div class="letter-box" id="letter-box-8"><div>W</div></div>
+            <div class="letter-box" id="letter-box-9"><div>I</div></div>
+            <div class="letter-box" id="letter-box-10"><div>S</div></div>
+            <div class="letter-box" id="letter-box-11"><div>E</div></div>
+            <div class="letter-box" id="letter-box-12"><div>L</div></div>
+            <div class="letter-box" id="letter-box-13"><div>Y</div></div>
+        </div>
+    </div>
+</div>
+
+<div id="login-outer-container">
+    <div id="login-inner-container">
+        <form action="Login" method="post">
+            <div class="form-group">
+                <label for="Device ID">Device ID</label>
+                <input type="text" class="form-control" id="deviceid-input" name="DeviceId">
+            </div>
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="password" class="form-control" id="password-input" name="Password">
+            </div>
+            <button type="submit" class="btn btn-dark">Login</button>
+            <a id="create-new-user-link" href="CreateNewUser" class="button">New Device</a>
+        </form>
+    </div>
+</div>
+

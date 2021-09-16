@@ -1,0 +1,128 @@
+﻿@keyframes welcomesideways {
+    0% {
+        visibility: visible;
+        left: 150%
+    }
+
+    30% {
+        left: 50%;
+    }
+
+    70% {
+        left: 50%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+#word-container-1 {
+    position: absolute;
+    font-family: 'Fredoka One', cursive;
+    top: 40%;
+    visibility: hidden;
+    font-size: 3em;
+    width: 660px;
+    transform: translate(-50%, -50%);
+    animation: welcomesideways;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#word-container-2 {
+    position: absolute;
+    top: 40%;
+    visibility: hidden;
+    font-family: 'Fredoka One', cursive;
+    font-size: 3em;
+    width: 880px;
+    transform: translate(-50%, -50%);
+    animation: welcomesideways;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2500ms;
+}
+
+#word-container-3 {
+    position: absolute;
+    top: 40%;
+    visibility: hidden;
+    font-family: 'Fredoka One', cursive;
+    font-size: 3em;
+    width: 1400px;
+    transform: translate(-50%, -50%);
+    animation: welcomesideways;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 5100ms;
+}
+
+.letter-box {
+    display: inline-block;
+    margin-left: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+    .letter-box > * {
+        text-align: center;
+        padding-top: 35%;
+    }
+
+#letter-box-1 {
+    background-color: orange;
+}
+
+#letter-box-2 {
+    background-color: lightgreen;
+}
+
+#letter-box-3 {
+    background-color: yellow;
+}
+
+#letter-box-4 {
+    background-color: mediumpurple;
+}
+
+#letter-box-5 {
+    background-color: blue;
+}
+
+#letter-box-6 {
+    background-color: deeppink;
+}
+
+#letter-box-7 {
+    background-color: orange;
+}
+
+#letter-box-8 {
+    background-color: lightgreen;
+}
+
+#letter-box-9 {
+    background-color: yellow;
+}
+
+#letter-box-10 {
+    background-color: mediumpurple;
+}
+
+#letter-box-11 {
+    background-color: blue;
+}
+
+#letter-box-12 {
+    background-color: deeppink;
+}
+
+#letter-box-13 {
+    background-color: orange;
+}
+

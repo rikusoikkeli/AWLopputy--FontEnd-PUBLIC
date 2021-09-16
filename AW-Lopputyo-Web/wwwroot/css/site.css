@@ -1,0 +1,312 @@
+﻿@keyframes addshadow {
+    0% {
+        box-shadow: 0px 0px 0px #999;
+    }
+
+    100% {
+        box-shadow: 10px 10px 10px #999;
+    }
+}
+
+.view-button {
+    background-color: plum;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.view-button-logout {
+    background-color: plum;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.view-button-text {
+    padding: 100px;
+    color: black;
+}
+
+.view-button:hover {
+    animation: addshadow;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 200ms;
+}
+
+.view-button-logout:hover {
+    animation: addshadow;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 200ms;
+}
+
+#view-buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+#view-button-1 {
+    background-color: orange;
+}
+
+#view-button-2 {
+    background-color: lightgreen;
+}
+
+#view-button-3 {
+    background-color: yellow;
+}
+
+#view-button-4 {
+    background-color: mediumpurple;
+}
+
+#view-button-5 {
+    background-color: dodgerblue;
+}
+
+#view-button-6 {
+    background-color: deeppink;
+}
+
+#view-button-7 {
+    background-color: fuchsia;
+}
+
+#view-button-8 {
+    background-color: skyblue;
+}
+
+#view-button-9 {
+    background-color: salmon;
+}
+
+#view-1 {
+    display: none;
+}
+
+#view-2 {
+    display: none;
+}
+
+#view-3 {
+    display: none;
+}
+
+#view-4 {
+    display: none;
+}
+
+#view-5 {
+    display: none;
+}
+
+#view-6 {
+    display: none;
+}
+
+#view-7 {
+    display: none;
+}
+
+#view-8 {
+    display: none;
+}
+
+#view-9 {
+    display: none;
+}
+
+@keyframes bringtoscreenmenu {
+    0% {
+        transform: translate(-50%, 100%)
+    }
+
+    100% {
+        transform: translate(-50%, -50%)
+    }
+}
+
+@keyframes bringtoscreenlogin {
+    0% {
+        visibility: visible;
+        margin-top: 100%
+    }
+
+    100% {
+        visibility: visible;
+        margin-top: 0%
+    }
+}
+
+#main-view {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bringtoscreenmenu;
+    animation-duration: 500ms;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+}
+
+#view-buttons {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-outer-container {
+    font-family: 'Glory', sans-serif;
+    font-size: 18px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    background-color: orange;
+    height: 350px;
+    width: 350px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    animation: bringtoscreenlogin;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-delay: 7900ms;
+}
+
+#login-outer-container-nodelay {
+    font-family: 'Glory', sans-serif;
+    font-size: 18px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    background-color: orange;
+    height: 350px;
+    width: 350px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    animation: bringtoscreenlogin;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+
+#login-inner-container {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#create-new-user-link {
+    color: black;
+}
+
+#create-new-user-outer-container {
+    font-family: 'Glory', sans-serif;
+    font-size: 18px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    background-color: orange;
+    height: 350px;
+    width: 350px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    animation: bringtoscreenlogin;
+    animation-duration: 1000ms;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+}
+
+#create-new-user-inner-container {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#login-link {
+    color: black;
+}
+
+@keyframes bringtoscreengraph {
+    0% {left:120%}
+    100% {left: 40%}
+}
+
+.graph-div {
+    position: relative;
+    border-style: dashed;
+    border-width: 5px;
+    height: 420px;
+    width: 550px;
+    left: 40%;
+    margin-top: 15%;
+    animation: bringtoscreengraph;
+    animation-duration: 600ms;
+    animation-iteration-count: 1;
+}
+
+@keyframes bringtoscreenbackbutton {
+    0% {left: -60%}
+    100% {left: 5%}
+}
+
+.tomenu-button {
+    position: relative;
+    top: 15%;
+    left: 5%;
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    animation: bringtoscreenbackbutton;
+    animation-duration: 600ms;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+.tomenu-button-no-animation {
+    position: relative;
+    top: 15%;
+    left: 5%;
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.tomenu-button:hover {
+    animation: addshadow;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 200ms;
+}
+
+.tomenu-button-no-animation:hover {
+    animation: addshadow;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 200ms;
+}
+
