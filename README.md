@@ -1,4 +1,4 @@
-# AWLopputyo-FontEnd-PUBLIC
+# AWLopputyo-FrontEnd-PUBLIC
 
 Tämä on Rikun, Otson ja Muhsenin AW Academy -lopputyöhön kuuluva web-sovellus.
 
